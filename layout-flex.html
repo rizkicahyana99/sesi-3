@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Flex</title>
+
+    <style>
+        body {
+            margin: 0;    
+            display: flex;
+            flex-direction: column;
+        }
+        header img {
+            /* atau  */
+        /* #header-logo img { */
+            width: 100px;
+        }
+
+        main img {
+            width: 50%;
+        }
+
+        header {
+            background: orange;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #header-logo {
+            display: flex;
+        }
+
+        #header-text {
+            display: flex;
+            text-align: center;
+        }
+
+        #menu {
+            display: flex;
+        }
+
+        nav ul {
+            margin-left: -2.5em;
+            display: flex;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            background: #909fa2;
+            padding: 1em;
+        }
+
+        nav ul li:hover {
+            background: #5e5f5e;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 1em;
+        }
+        
+        nav ul li a:hover {
+            color: #000;
+        }
+
+        nav {
+            color: white;
+        }
+
+        main {
+            background: greenyellow;
+            padding: 1em;
+            min-height: 85vh;
+        }
+
+        main h2 {
+            margin: 0;
+        }
+
+        footer {
+            background: #000;
+            color: #fff;
+            height: 5vh;
+            margin-top: auto;
+        }
+
+        #btn-catch {
+            background: white;
+            padding: 1em;
+            border: solid 1px red;
+            cursor: pointer;
+            border-radius: 0.5em;
+        }
+
+        #btn-catch:hover {
+            background: red;
+            color: white;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+            <div id="header-logo">
+                <img src="https://www.angin.id/wp-content/uploads/2023/04/9cc90aa3-90d4-4560-bf75-c881573fc2d4-1024x1024.png" alt="Logo Hacktiv8" />
+            </div>
+            <div id="header-text">
+                <h1>PT Hacktivate Indonesia</h1>
+            </div>
+            
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Menu 1</a></li>
+                        <li><a href="#">Menu 2</a></li>
+                        <li><a href="#">Menu 3</a></li>
+                        <li><a href="#">Menu 4</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+    <div id="content-wrapper">
+        
+        <main>
+            
+            <h2>Judul 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatem perferendis dicta vitae possimus dolor sint voluptates qui repellat ut? Recusandae eligendi non ad fugit nulla expedita suscipit at fugiat? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo dolorem, deleniti ad minima veniam voluptatibus aut magni quod iste nostrum! Minima ad possimus ipsam totam quis animi perferendis officiis.</p>
+    
+            <img src="https://cdn.wallpapersafari.com/3/70/Ky1CFl.jpg" alt="Mega Charizard" />
+
+            <button id="btn-catch">Catch Pokemon!</button>
+            
+            <h2>Judul 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatem perferendis dicta vitae possimus dolor sint voluptates qui repellat ut? Recusandae eligendi non ad fugit nulla expedita suscipit at fugiat? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo dolorem, deleniti ad minima veniam voluptatibus aut magni quod iste nostrum! Minima ad possimus ipsam totam quis animi perferendis officiis.</p>
+    
+            <h2>Judul 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatem perferendis dicta vitae possimus dolor sint voluptates qui repellat ut? Recusandae eligendi non ad fugit nulla expedita suscipit at fugiat? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo dolorem, deleniti ad minima veniam voluptatibus aut magni quod iste nostrum! Minima ad possimus ipsam totam quis animi perferendis officiis.</p>
+    
+        </main>
+    </div>
+
+    <footer>
+        &copy; 2024 Nama Anda. All Rights Reserved
+    </footer>
+
+
+</body>
+</html>
